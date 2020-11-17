@@ -1,0 +1,12 @@
+#P6E2
+#Escribe un programa que te pida números y los guarde en una lista. 
+#Para terminar de introducir número, simplemente escribe “Salir”. El programa termina escribiendo la lista de números.
+lista= []
+numeros =(input("Escribe numeros "))
+lista.append (numeros)
+while (numeros != ("salir")):
+    numeros= (input("Escribe numeros "))
+    lista.append (numeros)
+if (numeros == ("salir")):
+    lista.remove (numeros)
+    print (lista)
