@@ -1,0 +1,12 @@
+#P6E4
+#Escribe un programa que te pida dos números, de manera que el segundo sea mayor que el primero. 
+#El programa termina escribiendo los dos números tal y como se pide
+numero1= int(input("Dame un numero "))
+numero2 = int(input("Dame un numero mas grande "))
+while (numero2 < numero1):
+     numero2= int(input("Vuelve a escribir un numero mas grande "))
+if (numero2 > numero1):
+    print ("El" ,numero2, "es mayor que el" ,numero1)
+
+
+
