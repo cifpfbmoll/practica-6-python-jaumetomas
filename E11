@@ -1,0 +1,20 @@
+#P6E11
+#Escribir un programa para jugar a adivinar un número (el ordenador "piensa" el número y el usuario lo ha de adivinar). 
+#El programa empieza pidiendo entre qué números está el número a adivinar, se "inventa" un número al azar y luego el usuario
+#  va probando valores. El programa va decidiendo si son demasiado grandes o pequeños. 
+
+import random
+minimo = int(input("Escribe el valor minimo "))
+maximo = int(input( "Escribe el valor maximo "))
+intentos = 0
+secrto= random.randint (minimo, maximo)
+print ("A ver si adivinas un numero entre" ,minimo, "y" ,maximo)
+numero = int(input("Escribe un numero "))
+while (numero != secreto):
+    while (nmero < secreto):
+        numero =int(input("ERROR, es demasiado pequeño, vuelve a probar "))
+        intentos +=1
+    while (numero > secreto):
+        numero= int(input("ERROR, es demasiado grande, vuelve a intentarlo "))
+        intentos +=1
+print ("Enhorabuena, solo lo has intentado" ,intentos, "veces")
