@@ -1,0 +1,13 @@
+#P6E5
+#Escribe un programa que te pida números cada vez más grandes y que se guarden en una lista. 
+#Para acabar de escribir los números, escribe un número que no sea mayor que el anterior. 
+#El programa termina escribiendo la lista de números:
+numeros= []
+numero1= int(input("Dame numeros "))
+numero2= int(input("Dame numeros mas grandes"))
+while (numero2 > numero1):
+    numero2= int(input("Dame numeros mas grandes "))
+if (numero1 >= numero2):
+    numeros.append(numero1)
+    numeros.append(numero2)
+    print (numeros)

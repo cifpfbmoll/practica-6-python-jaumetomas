@@ -1,0 +1,16 @@
+#P6E6
+#Escribe un programa que pida primero dos números (máximo y mínimo) y que después te pida números intermedios.
+# Para terminar de escribir números, escribe un número que no esté comprendido entre los dos valores iniciales.
+# El programa termina escribiendo la lista de números.
+lista =[]
+minimo= int(input("Dame el numero minimo "))
+maximo= int(input("Dame el numero maximo "))
+numeros =int(input("Introduce numeros que esten entre el minimo y el maximo "))
+lista.append(numeros)
+while (numeros >= minimo and numeros <= maximo):
+    numeros =int(input("Introduce numeros que esten entre el minimo y el maximo "))
+    lista.append (numeros)
+if (numeros < minimo or numeros > maximo):
+    lista.remove (numeros)
+    print (lista)
+

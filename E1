@@ -1,0 +1,11 @@
+#P6E1
+#Escribe un programa que te pida palabras y las guarde en una lista. 
+#Para terminar de introducir palabras, simplemente pulsa Enter. El programa termina escribiendo la lista de palabras
+lista= []
+palabras= str(input("Escribe palabras "))
+lista.append (palabras)
+while (palabras != ""):
+    lista.append (palabras)
+    palabras= (input("Escribe palabras "))
+    
+print ("Las palabras que has escrito son" ,lista)
